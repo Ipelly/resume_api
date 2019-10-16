@@ -1,0 +1,7 @@
+environment :
+    NODE_ENV : development
+    PORT : 8000
+
+logger :
+    LOGGER_LEVEL : debug
+    HTTP_LOG_LEVEL : dev

@@ -1,0 +1,16 @@
+{
+    "restartable" : "rs",
+    "ignore": [
+      "node_modules",
+      "/tests",
+      "/config"
+    ],
+    "verbose" : true,
+    "execMap": {
+      "js": "export ENV_NAME=development && node index.js"
+    },
+   "watch" : [
+        "src/"
+    ],
+    "ext": "js"
+  }
