@@ -56,6 +56,6 @@
         {
             "type"              :   "Puzzle",          
             "question"          :   "Please solve this puzzle:\n ABCD\nA=---\nB--->\nC<---\nD>---\n",
-            "answer"            :   "No Answer"
+            "answer"            :   "ABCD \nA=><>\nB<=<<\nC>>=>\nD<><="
         }
 ]
