@@ -15,11 +15,7 @@ class ControllerDataReader {
             let ans = answers.find(o => o.type === parsedQs.q);
 
             if(parsedQs.q === "Puzzle")  
-            res.send(`ABCD
-            A=><>
-            B<=<<
-            C>>=>
-            D<><=`);
+            res.send(` ABCD \nA=><>\nB<=<<\nC>>=>\nD<><=`);
             res.send(ans.answer);
         } catch (error) {
             logger.error(`ControllerDataReader - GetData: Not able to get the response. ${error}`)
