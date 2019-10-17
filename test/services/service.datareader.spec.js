@@ -20,12 +20,12 @@ describe("Service : Data Reader ", ()=> {
         answers = await dataReaderService.fetchAllAnswers();
       });
 
-      it("should return a list of registered users", ()=>{
+      it("should return a list of answers", ()=>{
           expect(answers).to.be.an('Array');
       });
 
-      it("should return 20 registered users", ()=>{
-          expect(registeredUsers.length).equal(20);
+      it("should return 10 answers", ()=>{
+          expect(answers.length).equal(10);
       });
   });
 
