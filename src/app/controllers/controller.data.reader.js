@@ -14,7 +14,11 @@ class ControllerDataReader {
             let parsedQs = querystring.parse(parsedUrl.query);
             let ans = answers.find(o => o.type === parsedQs.q);
 
-            if(parsedQs.q === "Puzzle")  res.send('Need to work');
+            if(parsedQs.q === "Puzzle")  res.send(`ABCD
+            A=><>
+            B<=<<
+            C>>=>
+            D<><=`);
             res.send(ans.answer);
         } catch (error) {
             logger.error(`ControllerDataReader - GetData: Not able to get the response. ${error}`)
