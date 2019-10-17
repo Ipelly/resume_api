@@ -26,7 +26,7 @@ describe("Route : API Endpoint Inegration test", ()=> {
             });
         });
         
-        it('should return OK when there is query parameter', (done)=> {
+        it('should return OK when there is no query parameter', (done)=> {
             request.get('/questionnaires')
                 .expect(200)
                 .end((err, res)=> {
