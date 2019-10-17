@@ -6,7 +6,7 @@ var expect = require('chai').expect;
 let chai = require('chai');
 let chaiHttp = require('chai-http');
 let server=require("../../src/app/app");
-let dataReaderService = require('../services/service.datareader.spec.js');
+let dataReaderService = require('../../src/app/services/service.data.reader');
 
 let should = chai.should();
 chai.use(chaiHttp);
@@ -24,8 +24,8 @@ describe("Service : Data Reader ", ()=> {
           expect(answers).to.be.an('Array');
       });
 
-      it("should return 10 answers", ()=>{
-          expect(answers.length).equal(10);
+      it("should return 12 answers", ()=>{
+          expect(answers.length).equal(12);
       });
   });
 
