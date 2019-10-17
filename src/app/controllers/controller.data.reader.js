@@ -14,7 +14,8 @@ class ControllerDataReader {
             let parsedQs = querystring.parse(parsedUrl.query);
             let ans = answers.find(o => o.type === parsedQs.q);
 
-            if(parsedQs.q === "Puzzle")  res.send(`ABCD
+            if(parsedQs.q === "Puzzle")  
+            res.send(`ABCD
             A=><>
             B<=<<
             C>>=>
